@@ -1,0 +1,24 @@
+<configuration>
+	<property name="LOG_PATTERN"
+		value="%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] %C{40}:%L - %msg%n" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${LOG_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.aromit.routingds" level="DEBUG" />
+
+	<logger name="jdbc" level="OFF" />
+	<logger name="jdbc.sqlonly" level="OFF" />
+	<logger name="jdbc.sqltiming" level="DEBUG" />
+	<logger name="jdbc.audit" level="OFF" />
+	<logger name="jdbc.resultset" level="OFF" />
+	<logger name="jdbc.resultsettable" level="OFF" />
+	<logger name="jdbc.connection" level="OFF" />
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

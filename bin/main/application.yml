@@ -1,0 +1,34 @@
+info:
+  app:
+    name: Routing Datasource Example AromIT INC
+    version: ${project.version}
+spring:
+  datasource:
+    initialize: false
+  aop:
+    proxyTargetClass: true
+datasource:
+  primary-datasource:
+    url: jdbc:mysql://14.63.172.28:3306/starbucks
+    driverClassName: com.mysql.jdbc.Driver
+    username: starbucks
+    password: Arom!234
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    timeBetweenEvictionRunsMillis: 3600000
+  secondary-datasource:
+    url: jdbc:mysql://14.63.172.28:3306/starbucks
+    driverClassName: com.mysql.jdbc.Driver
+    username: starbucks
+    password: Arom!234
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    timeBetweenEvictionRunsMillis: 3600000
+  tertiary-datasource:
+    url: jdbc:mysql://14.63.172.28:3306/starbucks
+    driverClassName: com.mysql.jdbc.Driver
+    username: starbucks
+    password: Arom!234
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    timeBetweenEvictionRunsMillis: 3600000
