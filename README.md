@@ -2,7 +2,7 @@
 ## 설치
 
 ```sh
- git clone ${url}
+ git clone https://github.com/hoonyeo/routing-ds.git 
 
 ```
 ## Build
